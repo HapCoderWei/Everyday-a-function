@@ -23,13 +23,13 @@ void * my_memset_2( void* dest, int ch, size_t count )
 int main(int argc, char *argv[])
 {
     char str[] = "ghghghghghghghghgh";
-    char str1[] = "ghghghghghghghghgh";
+    //char str1[] = "ghghghghghghghghgh";
     puts(str);
     my_memset_1(str, 'a', sizeof(str));
     //my_memset_2(str1, 'z', sizeof(str1));
     /* memset() didn't check if count is greater than sizeof(dest) */
-    memset(str1, 'z', sizeof(str1)+2);
+    //memset(str1, 'z', sizeof(str1)+2);
     puts(str);
-    puts(str1);
+    //puts(str1);
     return 0;
 }
